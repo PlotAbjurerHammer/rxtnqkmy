@@ -18,6 +18,9 @@ dev = [
 [project.scripts]
 agentkit = "agentkit.cli:main"
 
+[project.gui-scripts]
+agentkit-gui = "agentkit.gui:main"
+
 [build-system]
 requires = ["setuptools>=68"]
 build-backend = "setuptools.build_meta"

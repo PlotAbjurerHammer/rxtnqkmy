@@ -41,6 +41,14 @@ python examples/mock_server.py &
 AGENTKIT_API_KEY=demo agentkit run "列出目录文件并写一个摘要" --base-url http://127.0.0.1:8901
 ```
 
+## Desktop app
+
+`agentkit-gui` launches a Tkinter desktop app (`agentkit/gui.py`): enter a task, watch the live Action/Observation log, and approve sensitive tools (`shell`, `write_file`) via dialog before they run.
+
+```bash
+AGENTKIT_API_KEY=sk-... agentkit-gui
+```
+
 ## Install
 
 ```bash
