@@ -81,6 +81,7 @@ async def test_agent_stops_at_max_steps():
     result = await agent.run("loop forever")
     assert not result.finished
     assert result.steps == 3
+    assert "max steps" in result.stop_reason
 
 
 async def test_unknown_tool_returns_error_observation():
